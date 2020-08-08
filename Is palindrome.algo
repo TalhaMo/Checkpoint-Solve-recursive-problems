@@ -1,0 +1,13 @@
+FUNCTION is_palindrome(str : STRING[length], first,last : INTEGER) : BOOLEAN
+BEGIN
+    fisrt:=0;
+    last:=length-1;
+    IF (str.length=0 or str.length=1) THEN
+        RETURN TRUE;
+    ELSE_IF (s[first] = s[last]) THEN
+        RETURN is_palindrome(s, first +1, last -1);
+    ELSE
+        RETURN FALSE
+    END_IF
+END
+        
